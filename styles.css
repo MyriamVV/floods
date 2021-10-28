@@ -1,0 +1,338 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+body{
+    background-color: #a3c2b7;
+}
+
+.content {
+   
+    padding-top: 0% ;
+    padding-bottom: 0;
+    margin: 4%;
+} 
+
+.text {
+    margin-left: 3%;
+     margin-right: 2.5%;
+}
+
+.date {
+
+    margin-bottom: -8%;
+    color: darkslategray ;
+}
+
+
+.icon {
+    
+  padding-top: 20% ;
+  padding-bottom: 0% ;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+
+.icon2 {
+    padding-top: 20%;
+    margin-right: 10%;
+  margin-left: 10%;
+ padding-bottom: 0%;
+}
+
+.icon3 {
+    padding-top: 20%;
+    margin-right: 10%;
+  margin-left: 10%;
+}
+
+.icon4 {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-right: 10%;
+  margin-left: 10%;
+}
+
+
+
+.caption {
+   margin: 5 auto;
+    padding: 10px;
+}
+
+.intro {
+    margin: 5 auto;
+    padding: 10px;
+
+
+}
+
+img{
+    display: block;
+    width:  100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+} 
+.Images.icons {
+    width: 100%;
+    height: 100%;
+}
+.container.photo {
+    padding: 0px;
+}
+
+.flex > div {
+    margin-bottom: 10px;
+}
+
+p.caption {
+    font-size: .9rem;
+    color:  gray;
+    margin: 0;
+}
+
+.photo_caption {
+    font-size: 18px;
+    margin-top: 1%;
+    color: darkslategray;
+}
+
+.Sources {
+    font-size: 15px;
+    color: darkslategray;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
+
+} 
+
+  .sources_headline {
+    padding-left: 1%;
+    margin-left: 3%;
+  }
+
+.byline {
+    margin-bottom: 3%;
+}
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline {
+    font-size: 60px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.byline {
+    font-size: 45px;
+    margin-left: 3%;
+}
+
+.icons_container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex-wrap: nowrap;
+}
+
+.text {
+    font-size: 30px;
+      display: block;
+      margin: auto;
+}
+
+.icon {
+  
+display: block;
+  margin: auto;
+  padding: 1%;
+  width: 150%;
+  height: 100%;
+
+
+}
+.icon2 {
+    margin: auto;
+    margin-top:%;
+    display: flex;
+    padding: 1%;
+     width: 150%;
+  height: 100%;
+  flex-direction: column;    
+}
+
+.icon3 {
+    margin: auto;
+  padding: 1%;
+    display: block;
+     width: 150%;
+  height: 100%;
+}
+
+.icon4 {
+    margin: auto;
+  padding: 1%;
+    display: block;
+     width: 150%;
+  height: 100%;
+
+
+}
+
+.content {
+    font-size: 250%
+}
+
+
+
+.intro {
+    font-size: 40px;
+    margin-left: 6%;
+    margin-right: 5%;
+}
+
+.photo_caption {
+    font-size: 40px;
+    margin-top: 1%;
+    color: darkslategray;
+}
+
+.Sources {
+    font-size: 30px;
+    color: darkslategray;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
+
+} 
+
+#align{
+
+   max-height: 1200px;
+   align-content: auto ;
+
+}
+
+.photo_caption {
+font-size: 10%;
+
+}
+
+    
+  .date {
+
+    margin-bottom: -1%;
+    color: darkslategray;
+    font-size: 30px;
+    margin-bottom: -3%;
+}
+  
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
+
+
+.icons_container{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+}
+
+
+.icon {
+
+  margin: 1%;
+  padding: 1%;
+
+
+}
+.icon2 {
+    margin: 1%;
+  padding: 1%;
+    
+}
+
+.icon3 {
+    margin: 1%;
+  padding: 1%;
+}
+
+.icon4 {
+    margin: 1%;
+  padding: 1%;
+}
+
+.photo_caption {
+    font-size: 30px;
+    margin-top: 1%;
+    color: darkslategray;
+}
+
+.headline {
+    margin-left: 1%;
+}
+
+.byline {
+    margin-left: 1%;
+
+}
+
+h1 {
+
+text-align: center;
+
+}
+
+.sources_headline
+
+{font-size: 40px;
+    margin-left: 3%;
+
+}
+
+.text {
+    margin: 0 auto;
+    margin-right: 3%;
+}
+
+
